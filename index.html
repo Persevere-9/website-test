@@ -40,19 +40,26 @@
 
       </a>
       <a href="https://www.mozilla.org/">
-        <img>
+        <img srcset="mozilla-dinosaur-head120.png 120w, mozilla-dinosaur-head400.png 400w" sizes="(max-width: 480px) 120px,
+        400px" src="mozilla-dinosaur-head400.png" alt="mozilla-dinosaur-head" />
       </a>
       <a href="https://addons.mozilla.org/">
-        <img>
+        <img srcset="firefox-addons120.jpg 120w, firefox-addons400.jpg 400w" sizes="(max-width: 480px) 120px,
+        400px" src="firefox-addons400.jpg" alt="firefox-addons" />
       </a>
       <a href="https://developer.mozilla.org/zh-CN/">
-        <img>
+        <img src="mdn.svg" alt="mdn_logo" />
       </a>
       <div class="clearfix"></div>
     </div>
 
     <div class="red-panda">
       <!-- 插入照片元素 -->
+      <picture>
+        <source media="(max-width:600px)" srcset="red-panda600.jpg"/>
+        <source media="(min-width:601px)" srcset="red-panda1200.jpg"/>
+        <img src="red-panda1200.jpg" alt="red panda"/>
+      </picture>
     </div>
 
   </main>
